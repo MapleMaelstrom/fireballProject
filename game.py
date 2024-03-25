@@ -13,9 +13,9 @@ class Game():
     # iterates the game a given amount of count [default 500]
     def iterate(self, count = 500):
         for i in range(count):
+            self.iteration += 1
             if self.iteration >= self.end:
                 print("Final round!")
-            self.iteration += 1
             print(f"Round {self.iteration} has commenced!")
             random.shuffle(self.playerlist)
             self.playerlist.sort(key=lambda x: x.priority, reverse=True)
