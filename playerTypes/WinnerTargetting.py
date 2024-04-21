@@ -2,7 +2,7 @@ from playerTypes.Actor import Actor
 import random
 
 # WinTarg Actor Class
-# Ryan Bertola | March 24th 2024
+# Ryan Bertola | April 20th 2024
 # Will target exclusively those they deem the winner. Only activates when somebody has >4 downs.
 class WinTarg(Actor):
     def __init__(self) -> None:
