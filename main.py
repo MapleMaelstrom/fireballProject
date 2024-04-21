@@ -6,6 +6,7 @@ from playerTypes.Besties import createBesties # Only import the function so as t
 from playerTypes.Snake import createSnake # Only import the function so as to not overcomplicate things.
 from playerTypes.Knight import Knight
 from playerTypes.Revenge import Revenge
+from playerTypes.Fuse import Fuse
 from game import Game
 
 # firstList = [Aggressive() for i in range(50)] + [Passive() for j in range(50)]
