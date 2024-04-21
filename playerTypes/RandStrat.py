@@ -24,4 +24,6 @@ class RandomStrat(Actor):
             self.target = filteredTargets[0] # Set target to the first of the randomly shuffled group
         else:
             self.target = None # If nobody is available we don't want them to target
+        if self.target is not None:
+            self.target.occupied = True
         

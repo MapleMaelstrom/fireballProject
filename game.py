@@ -55,6 +55,7 @@ class Game:
     def game_logic(self):
         random.shuffle(self.playerlist)
         self.playerlist.sort(key=lambda x: x.priority, reverse=True)
+        playerlist = [i for i in playerlist if i.downedBy is None]
         for p in self.playerlist:
             p.choose_target(self.playerlist)
         for p in [n for n in self.playerlist if n.target is not None]:

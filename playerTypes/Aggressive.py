@@ -30,5 +30,7 @@ class Aggressive(Actor):
                 self.target = refiltered[0]
             else: # If no unoccupied players or non-downed players are found, default to no target.
                 self.target = None
+        if self.target is not None:
+            self.target.occupied = True
         
 # The battle will be started in the main.py so everybody attacks simultaneously [thus nobody gets attacked twice same iteration]

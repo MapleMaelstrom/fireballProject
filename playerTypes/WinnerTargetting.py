@@ -24,3 +24,5 @@ class WinTarg(Actor):
             self.target = filteredTargets[0] # Set target to the leader
         else:
             self.target = None # Does not target anyone otherwise.
+        if self.target is not None:
+            self.target.occupied = True
