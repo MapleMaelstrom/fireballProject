@@ -4,6 +4,7 @@ from playerTypes.RandStrat import RandomStrat
 from playerTypes.WinnerTargetting import WinTarg
 from playerTypes.Besties import createBesties # Only import the function so as to not overcomplicate things.
 from playerTypes.Snake import createSnake # Only import the function so as to not overcomplicate things.
+from playerTypes.Knight import 
 from game import Game
 
 # firstList = [Aggressive() for i in range(50)] + [Passive() for j in range(50)]
