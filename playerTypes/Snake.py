@@ -5,7 +5,7 @@ import random
 # Besties Actor Class
 # Ryan Bertola | April 20th 2024
 # Strategy by Doyin. Snake will act like a bestie until a random moment.
-# Random moment is a 1/100 to occur.
+# Random moment is a 1/100 to occur on a given time they choose target.
 class Snake(Actor):
     def __init__(self, friend) -> None:
         super().__init__()
