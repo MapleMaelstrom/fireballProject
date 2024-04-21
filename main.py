@@ -7,6 +7,7 @@ from playerTypes.Snake import createSnake # Only import the function so as to no
 from playerTypes.Knight import Knight
 from playerTypes.Revenge import Revenge
 from playerTypes.Fuse import Fuse
+from playerTypes.Merciless import Merciless
 from game import Game
 
 # firstList = [Aggressive() for i in range(50)] + [Passive() for j in range(50)]
