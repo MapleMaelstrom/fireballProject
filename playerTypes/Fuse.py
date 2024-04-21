@@ -1,7 +1,7 @@
 from playerTypes.Actor import Actor
 import random
 
-# Revenge Actor Class
+# Fuse Actor Class
 # Ryan Bertola | April 20th 2024
 # Idea by Doyin
 # Passive first 10 downs

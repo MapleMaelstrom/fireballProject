@@ -1,7 +1,7 @@
 from playerTypes.Actor import Actor
 import random
 
-# WinTarg Actor Class
+# Knight Actor Class
 # Ryan Bertola | April 20th 2024
 # Will target anyone except those they deem the winner. Only activates when somebody has >2 downs.
 class Knight(Actor):

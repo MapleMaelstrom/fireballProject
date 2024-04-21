@@ -2,7 +2,7 @@ from playerTypes.Actor import Actor
 from playerTypes.Besties import Bestie
 import random
 
-# Besties Actor Class
+# Snake Actor Class
 # Ryan Bertola | April 20th 2024
 # Strategy by Doyin. Snake will act like a bestie until a random moment.
 # Random moment is a 1/100 to occur on a given time they choose target.
