@@ -24,7 +24,7 @@ class Revenge(Actor):
             self.target = enemy
         else:
             filteredTargets = random.shuffle([t for t in targets if t.occupied is False and t.downedBy is None]) # Removes downed / occupied players.
-            if len(filteredTargets) != 0:
+            if filteredTargets is not None and len(filteredTargets) != 0:
                 self.target = filteredTargets[0]
             else:
                 self.target = None # Does not target anyone otherwise.
