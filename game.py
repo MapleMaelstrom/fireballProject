@@ -54,19 +54,18 @@ class Game:
             print(rawDownData)
         print(f"Round {self.iteration} has commenced!")
 
-    def game_logic(self): # Run the game logic
-        random.shuffle(self.playerlist) # Shuffle player list
-        self.playerlist.sort(key=lambda x: x.priority, reverse=True) # Sort by priority 
-        self.playerlist = [i for i in self.playerlist if i.downedBy is None] # Remove downed players
+    def game_logic(self):  # Run the game logic
+        random.shuffle(self.playerlist)  # Shuffle player list
+        self.playerlist.sort(key=lambda x: x.priority, reverse=True)  # Sort by priority
         for p in self.playerlist:
-            p.choose_target(self.playerlist) # Targetting logic
+            p.choose_target(self.playerlist)  # Targetting logic
         for p in [n for n in self.playerlist if n.target is not None]:
-            p.battle_target() # Battling logic
+            p.battle_target()  # Battling logic
 
-    def get_downed_each(self): # Get stats on how much of each class is downed
-        playerTypes = list(set([i.type for i in self.playerlist])) # Get each type of player in game
-        downedPlayers = [p.type for p in self.playerlist if p.downedBy is not None] # Get downed player types
+    def get_downed_each(self):  # Get stats on how much of each class is downed
+        playerTypes = list(set([i.type for i in self.playerlist]))  # Get each type of player in game
+        downedPlayers = [p.type for p in self.playerlist if p.downedBy is not None]  # Get downed player types
         eachDowned = {}
         for t in playerTypes:
-            eachDowned[t] = downedPlayers.count(t) # With the set-up made above, counting is simple :D
-        return eachDowned # A dictionary of each class and how much is downed
+            eachDowned[t] = downedPlayers.count(t)  # With the set-up made above, counting is simple :D
+        return eachDowned  # A dictionary of each class and how much is downed

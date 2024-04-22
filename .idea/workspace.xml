@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="12661253-84ce-4a18-a7d0-3bdf43cbe707" name="Changes" comment="" />
+    <list default="true" id="12661253-84ce-4a18-a7d0-3bdf43cbe707" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playerTypes/Actor.py" beforeDir="false" afterPath="$PROJECT_DIR$/playerTypes/Actor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playerTypes/WinnerTargetting.py" beforeDir="false" afterPath="$PROJECT_DIR$/playerTypes/WinnerTargetting.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

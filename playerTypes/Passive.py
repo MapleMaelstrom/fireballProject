@@ -6,6 +6,7 @@ from playerTypes.Actor import Actor
 class Passive(Actor):
     def __init__(self) -> None:
         super().__init__()
+        self.type = "Passive"
         self.win_weight = 40 # Lower win weight to represent more battle experience
     
     def __str__(self):
