@@ -31,6 +31,9 @@ class Game:
     # Ends the game. Any data that needs to be outputted should be put here.
     def end_game(self):
         plt.plot(self.down_count)
+        plt.xlabel("Round number")
+        plt.ylabel("Players downed")
+        plt.savefig('Players downed vs rounds')
         plt.show()
         finalLeaderboard = sorted(self.playerlist, key=lambda x: len(x.downs), reverse=True)
         winner = finalLeaderboard[0]
@@ -69,3 +72,17 @@ class Game:
         for t in playerTypes:
             eachDowned[t] = downedPlayers.count(t)  # With the set-up made above, counting is simple :D
         return eachDowned  # A dictionary of each class and how much is downed
+    
+    def getscore(self): 
+        finalLeaderboard = sorted(self.playerlist, key=lambda x: len(x.downs), reverse=True)
+        unique_types = set()
+        unique_score = []
+        playerTypes = list(set([i.type for i in self.playerlist]))
+        scoreboard = {}
+        for p in finalLeaderboard:
+            if p.type not in unique_types:
+                unique_score.append(p.type)
+                unique_types.add(p.type)
+        for t in playerTypes:
+            scoreboard[t] = 0
+        return unique_score, scoreboard
