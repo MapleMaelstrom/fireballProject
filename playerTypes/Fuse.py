@@ -17,9 +17,9 @@ class Fuse(Actor):
         return "Fuse"
 
     def choose_target(self, targets):
-        if len(self.prevDowns < 10): # Passive
+        if len(self.prevDowns) < 10: # Passive
             return super().choose_target(targets)
-        elif len(self.prevDowns < 30): # Aggressive
+        elif len(self.prevDowns) < 30: # Aggressive
             # Filter targets down to the desired group
             if self.occupied:
                 self.target = None
