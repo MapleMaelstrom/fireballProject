@@ -37,6 +37,8 @@ class Revenge(Actor):
     
     def determine_enemy(self):
         uniquePast = random.shuffle(list(set(self.prevDowns))) # remove dupes and randomly order them
+        if uniquePast is None: # If no past
+            return None
         downedByEach = [[self.prevDowns.count(i), i] for i in uniquePast] # Count previous downs from each
         downedByEach.sort(key=lambda x: x[0], reverse=True) # Get descending order
         if downedByEach[0][0] >= 2:
